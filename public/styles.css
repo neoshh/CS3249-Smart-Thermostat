@@ -1,0 +1,79 @@
+body, html {
+    background-color: #282835;
+    margin: 0;
+    padding: 0;
+}
+
+.thermostat {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+  
+.radial-bg {
+    fill: none;
+}
+
+.target-temperature {
+    font-size: 4rem;
+    text-anchor: middle;
+    fill: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.current-temperature {
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    text-anchor: middle;
+    fill: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 15%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: rgb(15, 122, 33);
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slidecontainer {
+    text-align: center
+}
+
+p {
+    text-align: center;
+    font: 15px "Livvic", arial, sans-serif;
+    color: rgb(197, 197, 197)
+}
+
+.target-temperature {
+    font:50px "Livvic", arial, sans-serif;
+}
+
+.current-temperature {
+    font:20px "Livvic", arial, sans-serif;
+}
