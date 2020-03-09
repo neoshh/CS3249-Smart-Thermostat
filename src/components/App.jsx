@@ -1,12 +1,14 @@
 import React from "react";
 import Thermostat from "./Thermostat";
 import Slider from "./Slider"
-// import SetTemperature from "./SetTemperature";
+import temperatures from "../temperatures"
 
 function App() {
 
-    const [targetTemp, setTargetTemp] = React.useState(78);
-    const [currentTemp, setCurrentTemp] = React.useState(60);
+    const [initalTargetTemp, initalCurrentTemp] = temperatures;
+
+    const [targetTemp, setTargetTemp] = React.useState(initalTargetTemp);
+    const [currentTemp, setCurrentTemp] = React.useState(initalCurrentTemp);
     const [tempColor, setTempColor] = React.useState({fill: "#6D6D6D",
         "-webkit-transition": "fill 1000ms linear",
         "-ms-transition": "fill 1000ms linear",
