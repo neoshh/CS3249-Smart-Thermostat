@@ -47,14 +47,14 @@ function Thermostat(props) {
                         x={center}
                         dy="0.1em"
                     >
-                        {props.targetTemp}
+                        {props.targetTemp}°
                     </tspan>
                     <tspan 
                         className="current-temperature"
                         x={center}
                         dy="1.8em"
                     >
-                        Current {props.currentTemp}
+                        Current {props.currentTemp}°
                     </tspan>
                 </text>
             </svg>
